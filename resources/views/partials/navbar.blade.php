@@ -7,7 +7,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav mx-auto text-uppercase" style="letter-spacing: 1px; font-size: 0.9rem;">
                 <li class="nav-item">
                     <a class="nav-link active" href="/">Home</a>
                 </li>
@@ -15,14 +15,11 @@
                     <a class="nav-link" href="#">Produk</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Kontak</a>
-                </li>
+                    <a class="nav-link" href="/contact">Kontak</a> </li>
             </ul>
             
             <div class="navbar-nav">
-                <a class="nav-link position-relative px-3" href="#">
-                    <i class="bi bi-cart-fill"></i> 
-                    <span class="d-lg-none">Keranjang</span> <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.7rem;">
+                <a class="nav-link position-relative px-3" href="/cart"> <i class="bi bi-cart3 fs-5"></i> <span class="d-lg-none">Keranjang</span> <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="font-size: 0.7rem; background-color: #00d4ff;">
                         {{ session('cart_count', 0) }}
                     </span>
                 </a>

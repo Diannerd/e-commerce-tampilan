@@ -36,7 +36,7 @@
             <div class="carousel-caption d-none d-md-block container text-start">
                 <h1 class="display-3 fw-bold text-white">Immersive Audio</h1>
                 <p class="fs-5 text-white">Premium sound quality for your ultimate home theater.</p>
-                <a href="#" class="btn btn-light rounded-pill px-4 fw-bold">Shop Now</a>
+               <a href="{{ route('product.detail', 3) }}" class="btn btn-shop mt-3">Shop Now</a>
             </div>
         </div>
 
@@ -45,7 +45,7 @@
             <div class="carousel-caption d-none d-md-block container text-start">
                 <h1 class="display-3 fw-bold text-white">Pure Soundscape</h1>
                 <p class="fs-5 text-white">Noise cancellation for your deep focus sessions.</p>
-                <a href="#" class="btn btn-light rounded-pill px-4 fw-bold">Shop Now</a>
+                <a href="{{ route('product.detail', 4) }}" class="btn btn-shop mt-3">Shop Now</a>
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@
 </div>
 
 <div class="container my-5">
-    <h2 class="mb-5 fw-bold text-center">Premium Collections</h2>
+    <h2 class="mb-5 fw-bold text-center">Newest Collections</h2>
     <div class="row">
         @foreach($produk as $item)
         <div class="col-md-4 mb-4">
